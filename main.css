@@ -37,3 +37,26 @@ input[type="number"] {
     margin-top: 50px;
     transform: scale(1.5);
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer button:hover {
+    background-color: #3e8e41;
+  }
+  
