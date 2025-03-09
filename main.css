@@ -1,0 +1,39 @@
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: auto; 
+    padding: 10px;
+}
+
+[id^="total"] {
+    width: 65px;
+}
+
+@media (max-width: 768px){
+    h1{
+        font-size: 2.5vw;
+    }
+}
+
+img{
+    height: 100px;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+body {
+    text-align: center;
+}
+
+
+input[type="number"] {
+    width: 50px;
+}
+
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    transform: scale(1.5);
+}
