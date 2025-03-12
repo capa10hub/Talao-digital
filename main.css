@@ -47,4 +47,8 @@ input[type="number"] {
     transform: scale(1.5);
 }
 
+.total-geral {
+    color: red;
+}
 
+
