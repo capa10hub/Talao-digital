@@ -8,9 +8,12 @@ h1 {
 }
 
 
+
 [id^="total"] {
     width: 65px;
+    margin-top: 1px;
 }
+
 
 @media (max-width: 768px){
     h1{
@@ -27,6 +30,9 @@ img{
 
 body {
     text-align: center;
+    border: 20px solid #ddd;
+    box-sizing: border-box;
+    padding: 60px;
 }
 
 
@@ -42,4 +48,3 @@ input[type="number"] {
 }
 
 
-  
