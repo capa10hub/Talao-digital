@@ -1,54 +1,103 @@
 h1 {
-    font-size: 50px;
     text-align: center;
-    margin-top: auto; 
-    padding: 10px;
+    margin-bottom: 20px;
     font-family: "Roboto", sans-serif;
-    color: rgb(170, 31, 31);
-}
-
-
-
-[id^="total"] {
-    width: 65px;
-    margin-top: 1px;
-}
-
-
-@media (max-width: 768px){
-    h1{
-        font-size: 2.5vw;
-    }
-}
-
-img{
-    height: 100px;
-    margin-right: 16px;
-    margin-top: 16px;
-    margin-left: 16px;
-}
-
-body {
-    text-align: center;
-    border: 20px solid #ddd;
-    box-sizing: border-box;
-    padding: 60px;
-}
-
-
-input[type="number"] {
-    width: 50px;
-}
-
-
-.container {
-    text-align: center;
-    margin-top: 50px;
-    transform: scale(1.5);
-}
-
-.total-geral {
     color: red;
+    font-size: 45px;
 }
 
-
+
+.cabecalho {
+    margin-bottom: 10px;
+}
+
+.cabecalho label {
+    margin-right: 5px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.cabecalho input {
+    margin-right: 20px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: "Roboto", sans-serif;
+    }
+
+    
+    th {
+    background-color: #c7c3c358;
+    padding: 10px;
+    }
+    
+    td {
+    padding: 2px;
+    border-bottom: 1px solid
+    }
+    
+    [id^="quantidade"] {
+    width: 50px;
+    height: 14px;
+    text-align: center;
+    }
+
+    [id^="modelo"] {
+    width: 250px;
+    }
+
+    [id^="unidade"] {
+    width: 50px;
+    }
+
+    [id^="total"] {
+    width: 60px;
+    }
+
+    select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    }
+
+
+    #nomeCliente {
+    width: 180px;
+    
+    }
+
+    #data {
+    width: 100px;
+    
+    }
+
+    .total-geral {
+      font-size: 15px; /* aumenta a fonte para 24 pixels */
+      font-weight: bold; /* torna a fonte negrita */
+    color: red;
+    }
+
+    body {
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 10 auto;
+      width: 500px; /* define a largura como 800 pixels */
+    margin: 0 auto;
+    }
+
+
