@@ -100,4 +100,8 @@ table {
     margin: 0 auto;
     }
 
+div input {
+    margin-left: 20px;
+}
+
 
