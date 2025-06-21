@@ -1,148 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
-    <title>Talão</title>
+<title>Talão Eletrônico - Login</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<h1>Pedido de cartazes</h1>
-<div class="cabecalho">
-<label>Cliente:</label>
-<input type="text" id="nomeCliente" />
-<label>Data:</label>
-<input type="date" id="data" />
+<body>
+<div class="login-container">
+    <h1>Talão Eletrônico</h1>
+    <form id="login-form">
+    <input type="password" id="password" placeholder="Senha">
+    <button type="submit">Entrar</button>
+    </form>
 </div>
 
-<body>
-<table>
-    <tr>
-            <th>Qntd.</th>
-            <th>Modelo</th>
-            <th>Unid</th>
-            <th>Total</th>
-        </tr>
-        <tr>
-            <td><input type="number" min="1" id="quantidade1" value="" /></td>
-            <td>
-            <select id="modelo1">
-                <option value=""></option>
-                <option value="8.00">Cartaz Grande</option>
-                <option value="3.50">Splash Grande</option>
-                <option value="1.50">Gondola</option>
-                <option value="4.00">Médio</option>
-                <option value="6.50">Meia folha (42x60)</option>
-                <option value="20,00">Faixa (por metro)</option>
-                <option value="35.00">Cartaz duplo</option>
+<script>
+    const form = document.getElementById('login-form');
+const passwordInput = document.getElementById('password');
 
-            </select>
-            </td>
-            <td><input type="number" id="unidade1" readonly /></td>
-            <td><input type="number" id="total1" readonly /></td>
-        </tr>
-        <tr>
-            <td><input type="number" min="1" id="quantidade2" value="" /></td>
-            <td>
-            <select id="modelo2">
-                <option value=""></option>
-                <option value="8.00">Cartaz Grande</option>
-                <option value="3.50">Splash Grande</option>
-                <option value="1.50">Gondola</option>
-                <option value="4.00">Médio</option>
-                <option value="6.50">Meia folha (42x60)</option>
-                <option value="20,00">Faixa (por metro)</option>
-                <option value="35.00">Cartaz duplo</option>
-            </select>
-            </td>
-            <td><input type="number" id="unidade2" readonly /></td>
-            <td><input type="number" id="total2" readonly /></td>
-        </tr>
-        <tr>
-            <td><input type="number" min="1" id="quantidade3" value="" /></td>
-            <td>
-            <select id="modelo3">
-                <option value=""></option>
-                <option value="8.00">Cartaz Grande</option>
-                <option value="3.50">Splash Grande</option>
-                <option value="1.50">Gondola</option>
-                <option value="4.00">Médio</option>
-                <option value="6.50">Meia folha (42x60)</option>
-                <option value="20,00">Faixa (por metro)</option>
-                <option value="35.00">Cartaz duplo</option>
-            </select>
-            </td>
-            <td><input type="number" id="unidade3" readonly /></td>
-            <td><input type="number" id="total3" readonly /></td>
-        </tr>
-        <tr>
-            <td><input type="number" min="1" id="quantidade4" value="" /></td>
-            <td>
-            <select id="modelo4">
-                <option value=""></option>
-                <option value="8.00">Cartaz Grande</option>
-                <option value="3.50">Splash Grande</option>
-                <option value="1.50">Gondola</option>
-                <option value="4.00">Médio</option>
-                <option value="6.50">Meia folha (42x60)</option>
-                <option value="20,00">Faixa (por metro)</option>
-                <option value="35.00">Cartaz duplo</option>
-            </select>
-            </td>
-            <td><input type="number" id="unidade4" readonly /></td>
-            <td><input type="number" id="total4" readonly /></td>
-        </tr>
-        <tr>
-            <td><input type="number" min="1" id="quantidade5" value="" /></td>
-            <td>
-            <select id="modelo5">
-                <option value=""></option>
-                <option value="8.00">Cartaz Grande</option>
-                <option value="3.50">Splash Grande</option>
-                <option value="1.50">Gondola</option>
-                <option value="4.00">Médio</option>
-                <option value="6.50">Meia folha (42x60)</option>
-                <option value="20,00">Faixa (por metro)</option>
-                <option value="35.00">Cartaz duplo</option>
-            </select>
-            </td>
-            <td><input type="number" id="unidade5" readonly /></td>
-            <td><input type="number" id="total5" readonly /></td>
-        </tr>
-        <tr>
-            <td><input type="number" min="1" id="quantidade6" value="" /></td>
-            <td>
-            <select id="modelo6">
-                <option value=""></option>
-                <option value="8.00">Cartaz Grande</option>
-                <option value="3.50">Splash Grande</option>
-                <option value="1.50">Gondola</option>
-                <option value="4.00">Médio</option>
-                <option value="6.50">Meia folha (42x60)</option>
-                <option value="20,00">Faixa (por metro)</option>
-                <option value="35.00">Cartaz duplo</option>
-            </select>
-            </td>
-            <td><input type="number" id="unidade6" readonly /></td>
-            <td><input type="number" id="total6" readonly /></td>
-        </tr>
-        <tr>
-            <td colspan="3" style="text-align: right;">Total:</td>
-            <td><input type="number" id="totalGeral" class="total-geral" readonly /></td>
-        </tr>
-        
-    </table>
-    <tr>
-        <p style="font-size: 12px; color: #666;">Se preferir, pague pelo PIX</p>
-        </td>
-        <td colspan="3" style="text-align: right;">PIX:</td>
-        <td>
-        <input type="text" id="pix" />
-        
-    </tr>
-
-    <script src="./main.js"></script>
+form.addEventListener('submit', (e) => {
+e.preventDefault();
+const password = passwordInput.value;
+if (password === 'tiburcio') {
+// Redireciona para a página principal
+window.location.href = 'index.html';
+} else {
+    alert('Senha incorreta!');
+}
+});
+</script>
 </body>
 </html>
